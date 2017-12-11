@@ -1,0 +1,46 @@
+//@media screen and (max-width: 768px) {
+  html, body {
+  height: 100%;
+  background: #111;
+  color: #eee;
+}
+//}
+.aboutus{
+   background: url(/img/about_us.png) no-repeat center center;
+   background-size: cover;;
+   width: 705px;
+   height: 392px;
+   margin: 0 auto;
+}
+@mixin text($text-color,$text-font-family,$text-margin,$text-font-size,$text-align){
+   color: $text-color;
+   font-family: $text-font-family;
+   margin: $text-margin;
+   font-size: $text-font-size ;
+   text-align: $text-align;
+  }
+.banner{
+   height: 66%;
+   width: 42%;
+   background: #111;
+   color: #eee;
+   border: 4px solid;
+   position: relative ;
+   top: 30px;
+   left: 368px;
+   
+}
+.banner-header{
+   height: 15%;
+   width: 42%;
+   color: #eee;
+   position: relative ;
+   top: 46px;
+   left: 368px;
+   border: 0;
+   @include text(#eee, Prisma, 0, 20px, center);
+}
+.banner-content{
+    @include text(#eee, Consolas, 0, 11px, '');
+}
+//}

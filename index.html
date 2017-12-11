@@ -1,0 +1,68 @@
+---
+layout: home
+---
+<div class="logo-top">
+   <div class="left_pipe">
+		  <meta itemprop="image" content="{{site.baseurl}}/img/home/l_pipe.png">
+	 </div>
+		<div class="tap">
+ <meta itemprop="image" content="{{site.baseurl}}/img/home/tap.png">
+		</div>
+	<div class="glass">
+			 <meta itemprop="image" content="{{site.baseurl}}/img/home/glass.png">
+		</div>
+		<div class="drink-glass">
+			 <meta itemprop="image" content="{{site.baseurl}}/img/home/drink-glass.png">
+		</div>
+	<div class="right-pipe">
+			 <meta itemprop="image" content="{{site.baseurl}}/img/home/r_pipe.png">
+		</div>
+</div>
+<div class="home-body">
+      	<p id="text-logo">PACO'S</p>
+     	<div class="logo">
+				 <meta itemprop="image" content="{{site.baseurl}}/img/home/logonoborder.png"> 
+			</div>
+	    <div class="logo-content">
+	    	<label>CRAFT BEER & COCKTAILS</label> 
+    	</div>
+</div>
+<div class="footer-content">
+		<p id="footer-content">Your neighbourhood-like bar in the bustling Orchard Road. </p> 
+</div>
+<div class="navmenu">
+    <nav class="menu" >	
+								{% for node in site.posts reversed %}
+                                {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+                              <a href="#{{id}}">{{node.title}}</a>
+							   {% endfor %}
+							  <a href="https://www.facebook.com/Pacos.Tacos.Taps/"><img class="facebook-logo" /></a>
+								<a href="https://www.instagram.com/pacossingapore/?hl=en"><img class="instagram-logo"/></a>
+				</nav>
+</div>	
+<div class="happy-hour">
+	<div>
+		<p>At PACO’S there is never happy hour because it’s HAPPY ALL NIGHT LONG. 
+Our affordable prices are all NETT throughout the night.  
+</p>
+	</div>
+</div>				
+		{% for page in site.posts reversed %}  
+       {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+            <div id="{{id}}" class="section p-{{id}}">
+             {{ page.content }}
+    
+			</div>
+	{% endfor %}			
+<!-- <div class="container" > 
+<label>PACO'S</label>
+<div class="logo"></div>
+</div> -->
+
+<!-- <div class="logo">
+	<label>PACO'S</label>	
+	
+	</div></div> 
+    <div class="logo-content">
+		
+		<p>CRAFT BEER & COCKTAILS</p> -->

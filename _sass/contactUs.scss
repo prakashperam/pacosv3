@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px) {
+  html, body {
+  height: 100%;
+  background: #111;
+  color: #eee;
+}
+.legend{
+   color: #eee;
+   font-family: Prisma;
+   font-size: 30px;
+   text-align: center;
+   -webkit-padding-start: 18px;
+    -webkit-padding-end: 18px;
+}
+.contactheader{
+    margin: 70px 100px;
+    border: 6px solid;
+}
+
+.contactbanner{
+    margin: 0 auto;
+    border: 8px solid;
+    height: 500px;
+    width: 705px;
+}
+.contactbanner h1{
+    color: #eee;
+   font-family: Courier New ;
+   margin: 20px;
+   font-size: 20px;
+  // text-align: $text-align;
+   text-decoration: underline;
+}
+.contactbanner address{
+    color: #eee;
+   font-family: Courier New ;
+   margin: 20px;
+   font-size: 18px ;
+}
+#map {
+  width: 305px;
+  height: 250px;
+ // top: -315px;
+ // left: 400px;
+ margin: 0 auto;
+ }
+
+ 
+}

@@ -1,0 +1,5 @@
+markdown: redcarpet
+baseurl: /pacos_website
+exclude: ['READEME.md']
+sass:
+  style: compressed

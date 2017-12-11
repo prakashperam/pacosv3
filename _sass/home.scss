@@ -1,0 +1,126 @@
+//@media screen and (max-width: 768px) {
+  html, body {
+  height: 100%;
+  background: #111;
+  color: #eee;
+}
+.home-body{   
+   width: 705px;
+   height: 300px;
+   border: 4px solid;
+   background: #111;
+   margin: 0 auto;
+   //margin-top: 170px;
+  }
+@mixin text($text-color,$text-font-family,$text-margin,$text-font-size,$text-align){
+   color: $text-color;
+   font-family: $text-font-family;
+   margin: $text-margin;
+   font-size: $text-font-size ;
+   text-align: $text-align;
+  }
+#text-logo{
+   @include text(#eee, Prisma, 0, 200px,center);
+}
+.logo-content{
+   @include text(#eee, Bodoni MT Condensed, 0, 30px, center);
+   margin-top: -120px;
+   letter-spacing: 6px;
+}
+.logo{
+   background: url(/root/jekyll/pacos/img/home/logonoborder.png) no-repeat center center;
+   background-size: contain;
+   height: 92px;
+   position: relative;
+   top: -177px;
+   left: 119px;
+}
+
+.logo-top{
+   width: 705px;
+   height: 275px;
+   background: #111;
+   margin: 0 auto;
+   margin-top: 10px;
+   border: 0px;
+}
+@mixin logo-top-image($image-margin, $image-url, $image-color, $image-height, $image-width){
+   margin: $image-margin;
+   background: $image-url;
+   color: $image-color;
+   height: $image-height;
+   width: $image-width;
+}
+.left_pipe{
+   @include logo-top-image(0 auto, url(/root/jekyll/pacos/img/home/l_pipe.png) no-repeat center center, #eee, 275px,27px);
+   margin-left: 90px;
+}
+@mixin image-position($position, $position-top, $position-left){
+   position: $position;
+   top: $position-top;
+   left: $position-left;
+}
+.tap{
+   @include logo-top-image(0 auto, url(/root/jekyll/pacos/img/home/tap.png) no-repeat center center, #eee, 150px, 185px);
+   @include image-position(relative, -225px,-188px);
+   background-size: 100px 100px;
+}
+.glass{
+   @include logo-top-image(0 auto,  url(/root/jekyll/pacos/img/home/glass.png) no-repeat center center, #eee, 116px, 103px);
+   @include image-position(relative, -253px,-140px);
+   background-size: 70px 90px;
+}
+.drink-glass{
+   @include logo-top-image(0 auto, url(/root/jekyll/pacos/img/home/drink_glass.png) no-repeat center center, #eee, 250px, '');
+   @include image-position(relative, -448px, 145px);
+   background-size: 105px 120px;
+}
+.right-pipe{
+   @include logo-top-image(0 auto, url(/root/jekyll/pacos/img/home/r_pipe.png) no-repeat center center, #eee, 275px, 27px);
+   @include image-position(relative, -790px, 250px);
+}
+.footer-content{
+   width: 705px;
+   height: 60px;
+   background: #111;
+   margin: 0 auto;
+   margin-top: 10px;
+   border: 3px;
+}
+#footer-content{
+@include text(#eee, Courier New, 0, 16px, center);
+letter-spacing: 1px;
+}
+.navmenu{
+    width: 705px;
+   height: 60px;
+   background: #111;
+   margin: 0 auto;
+   margin-top: 25px;
+   border: 3px;
+}
+  .menu{
+    text-align: center;
+  }
+.menu a{
+ @include text(#eee, Century Gothic, 0, 19px, center);
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.facebook-logo{
+   @include logo-top-image(0 auto, url(/root/jekyll/pacos/img/facebook_logo.png) no-repeat center center, #eee, 25px, 25px);
+   background-size: 25px 25px;
+   background-color: blue;
+}
+  .instagram-logo{
+   @include logo-top-image(0 auto, url(/root/jekyll/pacos/img/instagram_logo.png) no-repeat center center, #eee, 25px, 25px);
+   background-size: 25px 25px;
+   }
+.happy-hour{
+   background: url(/root/jekyll/pacos/img/happy1.png) no-repeat center center;
+   background-size: cover;;
+   width: 705px;
+   height: 392px;
+   margin: 0 auto;
+}
+//}
